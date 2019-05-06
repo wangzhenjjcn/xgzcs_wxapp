@@ -10,7 +10,7 @@
         </view>  
         <view class="dots" wx:if="{{swiperCurrent + 1 == swiperMaxNumber}}">
           <form bindsubmit="goToIndex" report-submit="true">
-            <button type="primary" size="mini" form-type="submit" class="weui-btn mini-btn">点击进入小公子集团</button>
+            <button id="start_page_btn" type="primary" size="mini" form-type="submit" class="weui-btn mini-btn">点击进入小公子集团</button>
           </form>
         </view>
    </view>

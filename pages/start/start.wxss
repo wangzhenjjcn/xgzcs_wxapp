@@ -37,3 +37,8 @@ swiper-item image {
   width: 14rpx;  
   opacity: 1;
 }
+ 
+ 
+#start_page_btn {
+  background-color:#0b83ea;
+}

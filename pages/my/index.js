@@ -29,8 +29,18 @@ Page({
   aboutUs : function () {
     wx.showModal({
       title: '关于我们',
-      content: 'MyAzure2.01',
-      showCancel:false
+      content: '江苏小公子文化传媒发展有限公司:从注册就开始的创业伙伴，http://www.xgzjt.com',
+      showCancel: false,
+      cancelText:"返回",
+      confirmText:"确定",
+      success(res) {
+        if (res.confirm) {
+          console.log('用户点击确定')
+          
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
     })
   },
   getPhoneNumber: function(e) {
